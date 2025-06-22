@@ -1,24 +1,27 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Geonyoung Lee / wltschmrz"
+title                    : "Geonyoung Lee"
 title_separator          : "-"
 name                     : &name "Geonyoung Lee"
 description              : &description "personal description"
+# url                      : "http://192.168.0.5:4000"
 url                      : "https://wltschmrz.github.io"
 baseurl                  : "" # the subpath of site, e.g. "/blog"
 repository               : "wltschmrz/wltschmrz.github.io"
 
 # Site Author - Sidebar
 author:
-  avatar           : "profile_img.png"
+  avatar           : "profile_img copy.png"
   name             : "Geonyoung Lee"
   pronouns         : # example: "she/her"  
   bio              : "AI Researcher"
   location         : "Seoul, Republic of Korea"
   employer         : "Korea University"
   uri              : # URL
-  email            : "gun0lee@korea.ac.kr" 
+  email            : "gun0lee@korea.ac.kr"
+  email_user       : "gun0lee"
+  email_domain     : "korea.ac.kr"
 
   # Academic websites
   academia         : # URL
@@ -40,30 +43,15 @@ author:
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : # "bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
-  flickr           : # Username
-  foursquare       : # Username
-  goodreads        : # Username
-  google_plus      : # Username
-  keybase          : # Username
   instagram        : # Username
-  lastfm           : # Username
   linkedin         : # Username
-  mastodon         : # URL
-  medium           : # URL
   pinterest        : # Username
   soundcloud       : # Username
   steam            : # Username
   telegram         : # URL
-  tumblr           : # Username
   twitter          : # Username for X / Twitter
-  vine             : # Username
-  weibo            : # Username
-  wikipedia        : # Username
-  xing             : # Username
   youtube          : # Username
-  zhihu            : # Username
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
