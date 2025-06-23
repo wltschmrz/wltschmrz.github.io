@@ -31,7 +31,7 @@ author_profile: true
 
 <a id="publications"></a>
 
-### Publications
+## Publications
 <hr style="border: none; height: 1px; background-color: #ccc;" />
 <div style="font-family: 'Times New Roman', Times, serif; font-size: 17px; line-height: 1.6;">
   <div style="border: 1px solid #ccc; border-left: 4px solid #444; padding: 16px; border-radius: 8px; background-color: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
@@ -55,7 +55,7 @@ author_profile: true
 
 <a id="research-experiences"></a>
 
-### Research Experiences
+## Research Experiences
 <hr style="border: none; height: 1px; background-color: #ccc;" />
 
 <div style="font-family: 'Times New Roman', Times, serif; font-size: 17px; line-height: 1.6; display: flex; flex-direction: column; gap: 12px;">
@@ -74,7 +74,7 @@ author_profile: true
 
 <a id="education"></a>
 
-### Education
+## Education
 <hr style="border: none; height: 1px; background-color: #ccc;" />
 
 <div style="font-family: 'Times New Roman', Times, serif; font-size: 17px; line-height: 1.6; display: flex; flex-direction: column; gap: 12px;">
@@ -103,7 +103,7 @@ author_profile: true
 
 <a id="academic-activities"></a>
 
-### Academic Activities
+## Academic Activities
 <hr style="border: none; height: 1px; background-color: #ccc;" />
 
 <div style="font-family: 'Times New Roman', Times, serif; font-size: 17px; line-height: 1.6;">
@@ -128,7 +128,7 @@ author_profile: true
 
 
 
-### Research Interests
+## Research Interests
 <hr style="border: none; height: 1px; background-color: #ccc;" />
 
 <div style="font-family: 'Times New Roman', Times, serif; font-size: 17px; line-height: 1.6;">
