@@ -9,7 +9,9 @@ author_profile: true
 
 <a id="about"></a>
 
+<!--
 ### About Me
+-->
 
 <div style="display: flex; align-items: flex-start; gap: 12px; border: 1px solid #ccc; padding: 16px; border-radius: 8px; background-color: #fcfcfc; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
   <img src="https://www.notion.so/icons/bookmark_gray.svg" alt="bookmark icon" width="25px" style="margin-top: 4px;" />
