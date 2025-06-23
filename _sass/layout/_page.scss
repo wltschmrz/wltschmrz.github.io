@@ -55,6 +55,10 @@
   //   border-bottom: 1px solid var(--global-border-color);
   // }
 
+  h2{
+       border-bottom: none !important;
+  }
+   
   p, li, dl {
     font-size: 1em;
   }
