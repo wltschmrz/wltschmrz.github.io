@@ -47,7 +47,10 @@
           el.textContent = user + "@" + domain;
         </script>
       {% endif %}
-
+      {% if author.cv %}
+        <li><a href="{{ author.cv }}" target="_blank"><i class="fas fa-fw fa-file-pdf icon-pad-right"></i>CV (PDF)</a></li>
+      {% endif %}
+      
       <!-- Font Awesome and Academicons icons / Academic websites -->
       {% if author.academia %}
         <li><a href="{{ author.academia }}"><i class="ai ai-academia ai-fw icon-pad-right" aria-hidden="true"></i>Academia</a></li>
