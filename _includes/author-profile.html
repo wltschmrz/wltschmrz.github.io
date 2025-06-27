@@ -34,6 +34,21 @@
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
       {% endif %}
       {% if author.email %}
+        <li>
+          <a href="#" id="email-js">
+            <i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>
+            <span id="email-text">[email protected]</span>
+          </a>
+        </li>
+        <script>
+          const el = document.getElementById("email-js");
+          const user = "{{ author.email_user }}";
+          const domain = "{{ author.email_domain }}";
+          el.href = "mailto:" + user + "@" + domain;
+          document.getElementById("email-text").textContent = user + "@" + domain;
+        </script>
+      {% endif %}
+      <!--       {% if author.email %}
         <!-- <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li> -->
         <li style="display: flex; align-items: center; margin-bottom: 0;">
           <i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true" style="margin-right: 6px;"></i>
@@ -46,7 +61,7 @@
           el.href = "mailto:" + user + "@" + domain;
           el.textContent = user + "@" + domain;
         </script>
-      {% endif %}
+      {% endif %} -->
       {% if author.cv %}
         <li><a href="{{ author.cv }}"><i class="fas fa-fw fa-id-card icon-pad-right" aria-hidden="true"></i>CV (PDF)</a></li>
       {% endif %}
