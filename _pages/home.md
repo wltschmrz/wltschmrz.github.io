@@ -34,11 +34,25 @@ author_profile: true
 ## Publications
 <hr style="border: none; height: 1px; background-color: #ccc;" />
 <div style="font-family: 'Times New Roman', Times, serif; font-size: 17px; line-height: 1.6;">
-  <div style="border: 1px solid #ccc; border-left: 4px solid #444; padding: 16px; border-radius: 8px; background-color: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-    <a href="https://wltschmrz.github.io/DGMO/">DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization</a><br>
+  
+  <div style="border-left: 4px solid #444; padding: 16px; border-radius: 8px; background-color: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+    <a href="https://wltschmrz.github.io/DGMO/" style="text-decoration: none; color: inherit;">
+      <strong>DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization</strong>
+    </a><br>
     <strong>Geonyoung Lee</strong>*, Geonhee Han*, and Paul Hongsuck Seo &nbsp; (* Equal contribution)<br>
-    <em>Interspeech 2025</em> <div style="text-align: left;"> <span style="color: white; background-color: #8B0000; font-size: 0.875em; font-weight: 600; padding: 0em 0.6em; border-radius: 0.3em; margin-left: 0.75em; vertical-align: middle; display: inline-block; letter-spacing: 0.05em;">ORAL</span> </div>
+    <em>Interspeech 2025</em>
+    <span style="background-color: #8B0000; color: white; font-size: 0.875em; font-weight: 600; padding: 0em 0.6em; border-radius: 0.3em; margin-left: 0.75em; vertical-align: middle; display: inline-block;">ORAL</span>
   </div>
+
+  <div style="border-left: 4px solid #444; padding: 16px; border-radius: 8px; background-color: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+    <a href="https://wltschmrz.github.io/DGMO/" style="text-decoration: none; color: inherit;">
+      <strong>DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization</strong>
+    </a><br>
+    <strong>Geonyoung Lee</strong>*, Geonhee Han*, and Paul Hongsuck Seo &nbsp; (* Equal contribution)<br>
+    <em>Interspeech 2025</em>
+    <span style="background-color: #8B0000; color: white; font-size: 0.875em; font-weight: 600; padding: 0em 0.6em; border-radius: 0.3em; margin-left: 0.75em; vertical-align: middle; display: inline-block;">oral</span>
+  </div>
+
 </div>
 
 <!-- <div style="font-family: 'Times New Roman', Times, serif; font-size: 17px; line-height: 1.6;">
