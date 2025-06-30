@@ -37,7 +37,7 @@ author_profile: true
   <div style="border: 1px solid #ccc; border-left: 4px solid #444; padding: 16px; border-radius: 8px; background-color: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
     <a href="https://wltschmrz.github.io/DGMO/">DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization</a><br>
     <strong>Geonyoung Lee</strong>*, Geonhee Han*, and Paul Hongsuck Seo &nbsp; (* Equal contribution)<br>
-    <em>Interspeech 2025 (Presentation Type: TBD)</em>
+    <em>Interspeech 2025</em> <span style="color: red; font-weight: bold;">oral</span>
   </div>
 </div>
 
@@ -45,7 +45,7 @@ author_profile: true
   <div style="border-left: 3px solid #444; padding-left: 16px; margin-left: 4px;">
     <a href="https://wltschmrz.github.io/DGMO/">DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization</a><br>
     <strong>Geonyoung Lee</strong>*, Geonhee Han*, and Paul Hongsuck Seo &nbsp; (* Equal contribution)<br>
-    <em>Interspeech 2025 (Presentation Type: TBD)</em>
+    <em>Interspeech 2025</em> 
   </div>
 </div> -->
 
