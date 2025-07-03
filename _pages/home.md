@@ -109,8 +109,8 @@ author_profile: true
 <div style="font-family: 'Times New Roman', Times, serif; font-size: 17px; line-height: 1.6;">
 
   <div style="display: flex; justify-content: space-between;">
-    <div><strong>KUBIG AI Society</strong> — <em>Generative Models & CV Track Member</em></div>
-    <span style="white-space: nowrap;">Jun. 2024 – Jul. 2025 (Expected)</span>
+    <div><strong>KUBIG AI Society</strong> — <em>Generative Models & CV Track Member, Administrator</em></div>
+    <span style="white-space: nowrap;">Jul. 2024 – Jul. 2025</span>
   </div>
 
   <div style="display: flex; justify-content: space-between;">
