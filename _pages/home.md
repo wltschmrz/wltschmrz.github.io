@@ -34,11 +34,13 @@ author_profile: true
 ## Publications
 <hr style="border: none; height: 1px; background-color: #ccc;" />
 <div style="font-family: 'Times New Roman', Times, serif; font-size: 17px; line-height: 1.6;">
+  
   <div style="border: 1px solid #ccc; border-left: 4px solid #444; padding: 16px; border-radius: 8px; background-color: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
     <a href="https://wltschmrz.github.io/DGMO/">DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization</a><br>
     <strong>Geonyoung Lee</strong>*, Geonhee Han*, and Paul Hongsuck Seo &nbsp; (* Equal contribution)<br>
     <em>Interspeech 2025</em> <span style="color: white; background-color: rgba(139, 0, 0, 0.8); font-size: 0.875em; font-weight: 500; padding: 0px 6px; border-radius: 0.3em; margin-left: 6px; display: inline-block; letter-spacing: 0.02em; line-height: 1.2;">oral</span>
   </div>
+  
 </div>
 
 <!-- <div style="font-family: 'Times New Roman', Times, serif; font-size: 17px; line-height: 1.6;">
@@ -59,6 +61,15 @@ author_profile: true
 <hr style="border: none; height: 1px; background-color: #ccc;" />
 
 <div style="font-family: 'Times New Roman', Times, serif; font-size: 17px; line-height: 1.6; display: flex; flex-direction: column; gap: 12px;">
+
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; border: 1px solid #ccc; border-left: 4px solid #444; padding: 16px; border-radius: 8px; background-color: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+    <div>
+      <strong>KAIRI (KAIST AI Research Internship)</strong> — <em>Undergraduate Research Intern</em><br>
+      Advisor: Prof. Jinwoo Shin
+    </div>
+    <span style="white-space: nowrap;">Jul. 2025 – Aug. 2025</span>
+  </div>
+
 
   <div style="display: flex; justify-content: space-between; align-items: flex-start; border: 1px solid #ccc; border-left: 4px solid #444; padding: 16px; border-radius: 8px; background-color: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
     <div>
@@ -132,8 +143,8 @@ author_profile: true
 <hr style="border: none; height: 1px; background-color: #ccc;" />
 
 <div style="font-family: 'Times New Roman', Times, serif; font-size: 17px; line-height: 1.6;">
-- <strong>Diffusion Models</strong> for Audio and Vision<br>
-- <strong>Multimodal Learning</strong> (Text-Audio-Visual Alignment)<br>
+- <strong>Probabilistic Generative Models</strong> (e.g., Diffusion Models)<br>
+- <strong>Multimodal Representation Learning</strong> (Text-Audio-Visual Alignment)<br>
 - <strong>Reinforcement Learning for Robotics</strong>
 </div>
 <br>
