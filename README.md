@@ -1,96 +1,94 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# Geonyoung Lee — personal homepage
 
-![Academic Pages template example](images/homepage.png "Academic Pages template example")
+KAIST 석사과정 AI 연구자의 GitHub Pages / Jekyll 홈페이지입니다.
+기반 테마는 Academic Pages / Minimal Mistakes이며 원본 라이선스는 `LICENSE`에 보존했습니다.
 
-# Getting Started
+## GitHub 웹에서 수정하기
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your public repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+파일을 열고 연필(Edit) 버튼으로 수정한 뒤 커밋하세요.
 
-See more info at https://academicpages.github.io/
+| 수정할 내용 | 파일 |
+| --- | --- |
+| 이름, 소속, 이메일, GitHub, Scholar, LinkedIn, CV 링크 | `_data/profile.yml` |
+| 소개, 논문, 연구 경험, 학력, 활동 | `_pages/home.md` |
+| 상단 메뉴 | `_data/navigation.yml` |
+| 색상, 글자 크기, 화면 너비 | `_sass/layout/_personal.scss` |
+| 사이트 제목, 설명, 도메인 | `_config.yml` |
+| 실제 CV 문서 | `files/Geonyoung_Lee_CV.pdf` |
 
-## Running locally
+연락처가 `""`이면 화면에서 숨겨집니다. 이메일은 주소만, Scholar·LinkedIn·GitHub는
+`https://`로 시작하는 전체 프로필 URL을 입력하세요. 본문에는 색상을 직접 쓰지 말고
+기존 `entry`, `entry--dated`, `entry-list` 클래스를 사용하면 라이트/다크 테마에 함께 적용됩니다.
+최대 너비는 CSS의 `--site-width`로 조절합니다.
 
-When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+CV PDF는 별도 문서이므로 홈페이지 수정과 별개로 최신 내용을 업로드해 주세요.
+GitHub Pages 배포 설정이 활성화되어 있다면 push 후 사이트가 갱신됩니다.
 
-1. Clone the repository and made updates as detailed above.
+## 로컬 미리보기
 
-### Using a different IDE
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
-    ```bash
-    sudo apt update && sudo apt upgrade -y
-    ```
-    then try run `sudo apt install ruby-dev ruby-bundler nodejs` again.
-
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-
-    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
-    Install Gems Locally (Recommended):
-    ```bash
-    bundle config set --local path 'vendor/bundle'
-    ```
-    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and `.bundle`.
-
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
-
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
-
-## Using Docker
-
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
-
-You can build and execute the container by running the following command in the repository:
+Ruby와 Bundler가 있는 환경에서 처음 한 번:
 
 ```bash
-chmod -R 777 .
-docker compose up
+bundle config set --local path vendor/bundle
+bundle install
 ```
 
-You should now be able to access the website from `localhost:4000`.
+서버에서:
 
-### Using the DevContainer in VS Code
+```bash
+./scripts/preview
+```
 
-If you are using [Visual Studio Code](https://code.visualstudio.com/) you can use the [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) that comes with this Repository. Normally VS Code detects that a development coontainer configuration is available and asks you if you want to use the container. If this doesn't happen you can manually start the container by **F1->DevContainer: Reopen in Container**. This restarts your VS Code in the container and automatically hosts your academic page locally on http://localhost:4000. All changes will be updated live to that page after a few seconds.
+브라우저에서 `http://localhost:4000`을 엽니다. 본문·프로필·SCSS를 저장하면 자동 갱신됩니다.
+`_config.yml`이나 Gemfile을 바꾸면 미리보기 서버를 재시작해야 합니다.
 
-# Maintenance
+### SSH 서버에서 작업할 때 (Windows PowerShell)
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+**내 컴퓨터**에서 새 PowerShell 창을 열어 실행하세요.
+마지막 부분은 평소 SSH에 쓰는 대상 또는 SSH config 별칭으로 바꿉니다.
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+```powershell
+ssh -N -L 4000:127.0.0.1:4000 -L 35729:127.0.0.1:35729 사용자@서버주소
+```
 
-## Bugfixes and enhancements
+창이 조용히 대기하면 정상입니다. 창을 유지하고 `http://localhost:4000`을 여세요.
+4000은 웹페이지, 35729는 자동 새로고침입니다. 창이 꺼지면 위 명령을 다시 실행하면 됩니다.
+SSH 포트가 기본값이 아니면 평소와 같은 `-p 포트번호`를 추가합니다.
+로컬 4000 포트가 이미 사용 중이면 `-L 4001:127.0.0.1:4000`으로 바꾸고
+`http://localhost:4001`을 여세요. 미리보기는 loopback에만 열려 있어 서버 방화벽에 공개 포트를 열 필요가 없습니다.
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+서버 미리보기를 SSH 종료와 무관하게 유지하려면 서버에서:
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+```bash
+mkdir -p local
+nohup ./scripts/preview > local/preview.log 2>&1 < /dev/null &
+echo $! > local/preview.pid
+```
 
----
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
+로그 확인: `tail -f local/preview.log`
 
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+종료: `kill "$(cat local/preview.pid)"`
+
+이미 실행 중이면 중복 실행하지 마세요. 현재 작업 서버는 `local/preview-env.sh`에
+임시 Ruby/Jekyll 경로가 설정되어 있습니다. 서버 재부팅 등으로 `/tmp` 환경이 지워졌다면
+표준 Ruby/Bundler를 설치하고 `local/preview-env.sh`를 제거한 후 위의 설치 절차를 실행하세요.
+`local/`은 Git과 배포 대상에서 제외됩니다.
+
+## 확인과 개발
+
+```bash
+bundle exec jekyll build
+```
+
+모바일은 브라우저 F12 → 기기 모드로 확인할 수 있습니다.
+테마는 첫 방문 시 운영체제 설정을 따르고, 버튼으로 선택한 값은 브라우저에 저장됩니다.
+
+SCSS는 Jekyll이 자동 빌드합니다. `_main.js` 또는 메뉴 JS를 바꾸면:
+
+```bash
+npm install
+npm run build:js
+```
+
+`theme.js`는 독립 파일이라 별도 JS 빌드가 필요 없습니다.
+샘플 글·논문·가짜 CV와 비활성 아카이브는 제거했고, 공통 테마와 선택적 지도/Markdown 생성 도구는 보존했습니다.

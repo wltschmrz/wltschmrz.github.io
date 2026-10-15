@@ -3,152 +3,110 @@ layout: single
 permalink: /
 title: ""
 author_profile: true
+redirect_from:
+  - /about/
+  - /about.html
 ---
 
-{% include base_path %}
-
-<a id="about"></a>
-
-<!--
-### About Me
--->
-
-<div style="display: flex; align-items: flex-start; gap: 12px; border: 1px solid #ccc; padding: 16px; border-radius: 8px; background-color: #fcfcfc; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-  <img src="https://www.notion.so/icons/bookmark_gray.svg" alt="bookmark icon" width="25px" style="margin-top: 4px;" />
-  <span style="font-family: 'Times New Roman', Times, serif; font-size: 18px; line-height: 1.6;">
-    I am an undergraduate student majoring in Biomedical Engineering and double majoring in Mathematics at Korea University. I previously conducted research as an intern at the
-    <a href="https://miil.korea.ac.kr/">Multimodal Interactive Intelligence Laboratory (MIIL)</a>,
-    under the supervision of
-    <a href="https://phseo.github.io/">Prof. Paul Hongsuck Seo</a>.
-    My research interests lie in multimodal generative models, especially diffusion-based approaches for cross-modal alignment, synthesis, and understanding.
-    I am currently focused on <strong>generative modeling</strong> in the video domain, exploring how temporal dynamics and multimodal signals can be jointly modeled within modern deep learning frameworks.
-  </span>
+<div id="about" class="intro">
+  <p>
+    I am an M.S. student at the <a href="https://gsai.kaist.ac.kr/">Kim Jaechul Graduate School of AI, KAIST</a>,
+    advised by <a href="https://bispl-website.github.io/professor/">Prof. Jong Chul Ye</a>
+    in the <a href="https://bispl-website.github.io/">BISPL</a> lab.
+  </p>
+  <p>
+    My research centers on the mathematical foundations of generative modeling, particularly diffusion and flow-based models.
+    I am interested in understanding the dynamics of generation and using these insights to develop more efficient learning and sampling methods.
+    I also explore how generative models can be guided to satisfy constraints and solve inverse problems.
+  </p>
 </div>
-
-<br>
-
-
-
-<a id="publications"></a>
 
 ## Publications
-<hr style="border: none; height: 1px; background-color: #ccc;" />
-<div style="font-family: 'Times New Roman', Times, serif; font-size: 17px; line-height: 1.6;">
-  
-  <div style="border: 1px solid #ccc; border-left: 4px solid #444; padding: 16px; border-radius: 8px; background-color: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-    <a href="https://wltschmrz.github.io/DGMO/">DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization</a><br>
-    <strong>Geonyoung Lee</strong>*, Geonhee Han*, and Paul Hongsuck Seo &nbsp; (* Equal contribution)<br>
-    <em>Interspeech 2025</em> <span style="color: white; background-color: rgba(139, 0, 0, 0.8); font-size: 0.875em; font-weight: 500; padding: 0px 6px; border-radius: 0.3em; margin-left: 6px; display: inline-block; letter-spacing: 0.02em; line-height: 1.2;">oral</span>
-  </div>
-  
-</div>
+{: #publications }
 
-<!-- <div style="font-family: 'Times New Roman', Times, serif; font-size: 17px; line-height: 1.6;">
-  <div style="border-left: 3px solid #444; padding-left: 16px; margin-left: 4px;">
-    <a href="https://wltschmrz.github.io/DGMO/">DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization</a><br>
-    <strong>Geonyoung Lee</strong>*, Geonhee Han*, and Paul Hongsuck Seo &nbsp; (* Equal contribution)<br>
-    <em>Interspeech 2025</em> 
-  </div>
-</div> -->
+<div>
 
-
-<br>
-
-
-<a id="research-experiences"></a>
-
-## Research Experiences
-<hr style="border: none; height: 1px; background-color: #ccc;" />
-
-<div style="font-family: 'Times New Roman', Times, serif; font-size: 17px; line-height: 1.6; display: flex; flex-direction: column; gap: 12px;">
-
-  <div style="display: flex; justify-content: space-between; align-items: flex-start; border: 1px solid #ccc; border-left: 4px solid #444; padding: 16px; border-radius: 8px; background-color: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-    <div>
-      <strong>KAIRI (KAIST AI Research Internship)</strong> — <em>Undergraduate Research Intern</em><br>
-      Advisor: Prof. Jinwoo Shin
-    </div>
-    <span style="white-space: nowrap;">Jul. 2025 – Aug. 2025</span>
-  </div>
-
-
-  <div style="display: flex; justify-content: space-between; align-items: flex-start; border: 1px solid #ccc; border-left: 4px solid #444; padding: 16px; border-radius: 8px; background-color: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-    <div>
-      <strong>MIIL Lab, Korea University</strong> — <em>Undergraduate Research Intern</em><br>
-      Advisor: Prof. Paul Hongsuck Seo
-    </div>
-    <span style="white-space: nowrap;">Jul. 2024 – Jun. 2025</span>
+  <div class="entry">
+    <a href="https://wltschmrz.github.io/DGMO/">DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization</a><br />
+<strong>Geonyoung Lee</strong>*, Geonhee Han*, and Paul Hongsuck Seo &nbsp; (* Equal contribution)<br />
+<em>Interspeech 2025</em> <span class="badge">oral</span>
   </div>
 
 </div>
-<br>
 
+## Research Experience
+{: #research-experiences }
 
-<a id="education"></a>
+<div class="entry-list">
+
+  <div class="entry entry--dated">
+    <div>
+      <strong>KAIRI (KAIST AI Research Internship)</strong> — <em>Undergraduate Research Intern</em><br />
+Advisor: Prof. Jinwoo Shin
+    </div>
+    <span class="entry__date">Jul. 2025 – Aug. 2025</span>
+  </div>
+
+  <div class="entry entry--dated">
+    <div>
+      <strong>MIIL Lab, Korea University</strong> — <em>Undergraduate Research Intern</em><br />
+Advisor: Prof. Paul Hongsuck Seo
+    </div>
+    <span class="entry__date">Jul. 2024 – Jun. 2025</span>
+  </div>
+
+</div>
 
 ## Education
-<hr style="border: none; height: 1px; background-color: #ccc;" />
+{: #education }
 
-<div style="font-family: 'Times New Roman', Times, serif; font-size: 17px; line-height: 1.6; display: flex; flex-direction: column; gap: 12px;">
-
-  <div style="display: flex; justify-content: space-between; align-items: flex-start; border: 1px solid #ccc; padding: 16px; border-radius: 8px; background-color: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+<div class="entry-list">
+  <div class="entry entry--dated">
     <div>
-      <img src="https://www.notion.so/icons/graduate_gray.svg" width="25px" style="vertical-align: middle; margin-right: 6px; horizontal-align: middle;" />
+      <strong>KAIST</strong><br />
+      M.S. in Artificial Intelligence, Kim Jaechul Graduate School of AI
+    </div>
+    <span class="entry__date">Mar. 2026 – Present</span>
+  </div>
+
+  <div class="entry entry--dated">
+    <div>
+
       <strong>Korea University</strong><br />
       B.S. in Biomedical Engineering, College of Health Science
     </div>
-    <span style="white-space: nowrap;">Mar. 2022 – Feb. 2026 (Expected)</span>
+    <span class="entry__date">Mar. 2022 – Feb. 2026</span>
   </div>
 
-  <div style="display: flex; justify-content: space-between; align-items: flex-start; border: 1px solid #ccc; padding: 16px; border-radius: 8px; background-color: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+  <div class="entry entry--dated">
     <div>
-      <img src="https://www.notion.so/icons/graduate_gray.svg" width="25px" style="vertical-align: middle; margin-right: 6px; horizontal-align: middle;" />
+
       <strong>Korea University</strong><br />
       B.S. in Mathematics, College of Science
     </div>
-    <span style="white-space: nowrap;">Mar. 2022 – Feb. 2026 (Expected)</span>
+    <span class="entry__date">Mar. 2022 – Feb. 2026</span>
   </div>
 
 </div>
-<br>
-
-
-<a id="academic-activities"></a>
 
 ## Academic Activities
-<hr style="border: none; height: 1px; background-color: #ccc;" />
+{: #academic-activities }
 
-<div style="font-family: 'Times New Roman', Times, serif; font-size: 17px; line-height: 1.6;">
+<div class="entry-list">
 
-  <div style="display: flex; justify-content: space-between;">
-    <div><strong>KUBIG AI Society</strong> — <em>Generative Models & CV Track Member, Administrator</em></div>
-    <span style="white-space: nowrap;">Jul. 2024 – Jul. 2025</span>
+  <div class="entry entry--dated">
+    <div><strong>KUBIG AI Society</strong> — <em>Generative Models &amp; CV Track Member, Administrator</em></div>
+    <span class="entry__date">Jul. 2024 – Jul. 2025</span>
   </div>
 
-  <div style="display: flex; justify-content: space-between;">
+  <div class="entry entry--dated">
     <div><strong>BEAT Society</strong> — <em>AI Track Member</em></div>
-    <span style="white-space: nowrap;">Mar. 2023 – Jul. 2023</span>
+    <span class="entry__date">Mar. 2023 – Jul. 2023</span>
   </div>
 
-  <div style="display: flex; justify-content: space-between;">
+  <div class="entry entry--dated">
     <div><strong>B.I.O Union Society</strong> (Yonsei × Korea Univ.)</div>
-    <span style="white-space: nowrap;">Sep. 2022 – Dec. 2022</span>
+    <span class="entry__date">Sep. 2022 – Dec. 2022</span>
   </div>
 
 </div>
-<br>
-
-
-
-## Research Interests
-<hr style="border: none; height: 1px; background-color: #ccc;" />
-
-<div style="font-family: 'Times New Roman', Times, serif; font-size: 17px; line-height: 1.6;">
-- <strong>Probabilistic Generative Models</strong> (e.g., Diffusion Models)<br>
-- <strong>Multimodal Representation Learning</strong> (Text-Audio-Visual Alignment)<br>
-- <strong>Reinforcement Learning for Robotics</strong>
-</div>
-<br>
-
-
-
-

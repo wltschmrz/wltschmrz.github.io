@@ -1,0 +1,12 @@
+# GitHub 웹의 Edit(연필) 버튼으로 수정하세요. 빈 문자열("")인 연락처는 숨겨집니다.
+name: "Geonyoung Lee"
+avatar: "profile_img copy.png"
+bio: "M.S. Student · AI Researcher"
+employer: "Kim Jaechul Graduate School of AI, KAIST"
+employer_url: "https://gsai.kaist.ac.kr/"
+email: "gun0lee@kaist.ac.kr"
+# https:// 로 시작하는 전체 프로필 URL을 입력하세요.
+github: "https://github.com/wltschmrz"
+googlescholar: "https://scholar.google.com/citations?user=DfezcCgAAAAJ"
+linkedin: ""
+cv: "/files/Geonyoung_Lee_CV.pdf"

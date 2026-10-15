@@ -4,132 +4,35 @@ site_theme               : "default"
 title                    : "Geonyoung Lee"
 title_separator          : "-"
 name                     : &name "Geonyoung Lee"
-description              : &description "personal description"
-# url                      : "http://192.168.0.5:4000"
+description              : &description "M.S. student at KAIST's Kim Jaechul Graduate School of AI and BISPL, studying the mathematical foundations of diffusion and flow-based generative models."
 url                      : "https://wltschmrz.github.io"
 baseurl                  : "" # the subpath of site, e.g. "/blog"
 repository               : "wltschmrz/wltschmrz.github.io"
 
-# Site Author - Sidebar
-author:
-  avatar           : "profile_img copy.png"
-  name             : "Geonyoung Lee"
-  pronouns         : # example: "she/her"  
-  bio              : "AI Researcher"
-  location         : "Seoul, Republic of Korea"
-  employer         : "Korea University"
-  uri              : # URL
-  email            : "gun0lee@korea.ac.kr"
-  email_user       : "gun0lee"
-  email_domain     : "korea.ac.kr"
-  cv               : "/files/Geonyoung_Lee_CV.pdf"
-
-  # Academic websites
-  academia         : # URL
-  arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : # "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-  impactstory      : # URL
-  orcid            : # "http://orcid.org/yourorcidurl"
-  semantic         : # URL
-  pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : # URL
-  scopus           : # URL
-
-  # Repositories and software development
-  bitbucket        : # Username - Update with your username on the site
-  codepen          : # Username
-  dribbble         : # Username
-  github           : "wltschmrz"
-  kaggle           : # Username  
-  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
-
-  # Social media
-  facebook         : # Username
-  instagram        : # Username
-  linkedin         : # Username
-  pinterest        : # Username
-  soundcloud       : # Username
-  steam            : # Username
-  telegram         : # URL
-  twitter          : # Username for X / Twitter
-  youtube          : # Username
-
-# Publication Category - The following the list of publication categories and their headings
-publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
+# Profile and contact links: _data/profile.yml
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
-future                   : true
+future                   : false
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false      #change to true to add link to talkmap on talks page
 comments:
-  provider               : false # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
-  disqus:
-    shortname            :
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages" # "master", "gh-pages"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
-  transforms:
-    email                : "md5"
-  generatedFields:
-    date:
-      type               : "date"
-      options:
-        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+  provider: false
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true     # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 
-# SEO Related
-google_site_verification :
-bing_site_verification   :
-alexa_site_verification  :
-yandex_site_verification :
-
-
-# Social Sharing
-twitter:
-  username               : &twitter
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 :  # Open Graph/Twitter default site image
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
+# Search metadata
 social:
-  type                   : Person # Person or Organization (defaults to Person)
-  name                   : Geonyoung Lee # If the user or organization name differs from the site's name
-  links: [] # An array of links to social media profiles
-
-
-# Analytics
+  type: Person
+  name: Geonyoung Lee
+  links:
+    - https://github.com/wltschmrz
 analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
-  google:
-    tracking_id          :
-
+  provider: false
 
 # Reading Files
 include:
@@ -137,11 +40,20 @@ include:
   - _pages
   - files
 exclude:
+  - talkmap
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
   - .bundle
   - .github
+  - .devcontainer
+  - scripts
+  - docker-compose.yaml
+  - CONTRIBUTING.md
+  - markdown_generator
+  - talkmap.py
+  - talkmap.ipynb
+  - talkmap_out.ipynb
   - .jekyll-assets-cache
   - .sass-cache
   - assets/js/_main.js
@@ -190,78 +102,14 @@ kramdown:
   enable_coderay: false
 
 
-# These settings control the types of collections used by the template
-collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
-  publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
-    output: true
-    permalink: /:collection/:path/
-
-
-# These settings control how pages and collections are included in the site
+# Pages used by this personal website.
 defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # _pages
   - scope:
       path: ""
       type: pages
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  # _publications
-  - scope:
-      path: ""
-      type: publications
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
-
 
 # Sass/SCSS
 sass:
@@ -273,55 +121,18 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
 plugins:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-redirect-from
-  - jemoji
 
 # Mimic GitHub Pages with --safe
 whitelist:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-redirect-from
-  - jemoji
-
-
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
 
 
 # HTML Compression

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+args=(serve --host 127.0.0.1 --port "${PORT:-4000}" --livereload --livereload-port "${LIVERELOAD_PORT:-35729}" --force_polling)
+# Optional machine-local runtime; never committed or published.
+if [[ -f local/preview-env.sh ]]; then
+  source local/preview-env.sh
+  exec "$PREVIEW_RUBY" "$PREVIEW_JEKYLL" "${args[@]}" "$@"
+fi
+exec bundle exec jekyll "${args[@]}" "$@"
