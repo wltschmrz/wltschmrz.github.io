@@ -14,7 +14,7 @@
       {% if author.googlescholar and author.googlescholar != '' %}<li><a href="{{ author.googlescholar | escape }}"><i class="ai ai-google-scholar ai-fw" aria-hidden="true"></i> Google Scholar</a></li>{% endif %}
       {% if author.github and author.github != '' %}<li><a href="{{ author.github | escape }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>{% endif %}
       {% if author.linkedin and author.linkedin != '' %}<li><a href="{{ author.linkedin | escape }}"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>{% endif %}
-      {% if author.cv and author.cv != '' %}<li><a href="{{ author.cv | relative_url }}"><i class="fas fa-fw fa-id-card" aria-hidden="true"></i> CV (PDF)</a></li>{% endif %}
+      {% if author.cv and author.cv != '' %}<li><a href="{{ author.cv | relative_url }}?v={{ site.time | date: '%s' }}"><i class="fas fa-fw fa-id-card" aria-hidden="true"></i> CV (PDF)</a></li>{% endif %}
     </ul>
   </div>
 </div>

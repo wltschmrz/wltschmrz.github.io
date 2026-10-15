@@ -1,0 +1,11 @@
+{% assign cv_url = site.data.profile.cv | relative_url %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CV — {{ site.title | escape }}</title>
+  <meta name="robots" content="noindex">
+  <meta http-equiv="refresh" content="0; url={{ cv_url }}?v={{ site.time | date: '%s' }}">
+</head>
+<body><p><a href="{{ cv_url }}?v={{ site.time | date: '%s' }}">Open CV (PDF)</a></p></body>
+</html>
